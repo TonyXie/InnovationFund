@@ -1,6 +1,6 @@
 .parallaxize.bg-parallax { background-image: image-url("robe-mountain.jpg");}
 .contact .form-control {
-    background: image-url('rect_2.png') rgba(0, 0, 0, 0);
+    background: image-url('rect_2.png') rgba(0, 0, 0, 0.1);
 }
 .map-wrapper {
     background: image-url('rect_2.png');
@@ -16,4 +16,20 @@
 }
 .dp_tmlabel.animaze.fromTop p{
   text-align: left;
+}
+.portfolio-item {
+    height: 200px;      /* equals max image height */
+    text-align: center; margin: 1em 0;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.portfolio img {
+    vertical-align: middle;
+    max-height: 150px;
+    max-width: 160px;
 }
