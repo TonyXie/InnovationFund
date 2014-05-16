@@ -1243,9 +1243,6 @@ i.icon-mini:hover {
     padding: 5px 15px;
 }
  .portfolio {
-    padding-top: 60px;
-    padding-bottom: 80px;
-    background: #F4F4F4;
 }
 .portfolio .portfolio-item {
     opacity: 0;
@@ -1639,8 +1636,10 @@ i.icon-mini:hover {
 }
 .lightbox-item-overlay-content p {
     color:#fff;
+    text-align: left;
     font-size:12px;
     line-height:18px;
+    padding: 5px;
 }
 .lightbox-item img {
     display: block;
@@ -1702,13 +1701,6 @@ i.icon-mini:hover {
     -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     transition: all 0.2s linear;
-}
-.lightbox-item:hover img {
-    -webkit-transform: scale(1.2, 1.2) rotate(5deg);
-    -moz-transform: scale(1.1, 1.1) rotate(5deg);
-    -o-transform: scale(1.1, 1.1) rotate(5deg);
-    -ms-transform: scale(1.1, 1.1) rotate(5deg);
-    transform: scale(1.1, 1.1) rotate(5deg);
 }
 @-moz-document url-prefix() {
     .lightbox-item:hover img {

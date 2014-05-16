@@ -17,9 +17,9 @@
         %li
           %a{href: "#portfolio"} PORTFOLIO
         %li
-          %a{href: "#about"} TEAM
+          %a{href: "#team"} TEAM
         %li 
-          %a{:href => ""} APPLY 
+          %a{:href => "#about"} APPLY 
         %li
           %a{href: "#contact"} CONTACT
     / /.navbar-collapse
@@ -82,7 +82,7 @@
               %p Meet other peers at Penn who have the drive to start great things like you. Become a part of the greater Penn start up community.
 / END Howto
 / BEGIN Portfolio
-%section#portfolio.portfolio
+%section#portfolio
   .container
     .wrapper
       .row
@@ -101,95 +101,119 @@
           -#   %a{"data-filter" => "all", href: "javascript:;"} AND EVERYTHING
         .col-sm-12.animaze.fromBottom
           .row.portfolioContainer.text-center
-            .col-sm-3.portfolio-item.one
-              %a.popup
-                %span.project-hover
-                  %span
-                    GreenVote
-                = image_tag("greenvote.png", :alt => "GreenVote")
-            .col-sm-3.portfolio-item.one
-              %a.popup
-                %span.project-hover
-                  %span
-                    Aveece
-                = image_tag("aveece.png", :alt => "Aveece")    
-            .col-sm-3.portfolio-item.one
-              %a.popup{href: "images/image-03-full.jpg"}
-                %span.project-hover
-                  %span
-                    Biomated Solutions
-                = image_tag("biomated.png", :alt => "BioMated Solutions")
-            .col-sm-3.portfolio-item.one
-              %a.popup{href: "images/image-04-full.jpg"}
-                %span.project-hover
-                  %span
-                    Grand Round Table
-                = image_tag("grand-round-table.png")
-            .col-sm-3.portfolio-item.one
-              %a.popup{href: "images/image-02-full.jpg"}
-                %span.project-hover
-                  %span
-                    Graphmuse
-                = image_tag("graphmuse.png")
-            .col-sm-3.portfolio-item.one
-              %a.popup{href: "images/image-06-full.jpg"}
-                %span.project-hover
-                  %span
-                    Knowtorious
-                = image_tag("knowtorious.jpg")
-            .col-sm-3.portfolio-item.one
-              %a.popup{href: "images/image-06-full.jpg"}
-                %span.project-hover
-                  %span
-                    Parametric
-                = image_tag("parametric.png")
-            .col-sm-3.portfolio-item.one
-              %a.popup{href: "images/image-06-full.jpg"}
-                %span.project-hover
-                  %span
-                    Penncycle
-                = image_tag("penncycle.png")
-            .col-sm-3.portfolio-item.one
-              %a.popup{href: "images/image-06-full.jpg"}
-                %span.project-hover
-                  %span
-                    The Rent Scene
-                = image_tag("TheRentScene.jpg")  
+            .portfolio
+              .col-sm-3.portfolio-item.one
+                %a.popup
+                  %span.project-hover
+                    %span
+                      GreenVote
+                  = image_tag("greenvote.png", :alt => "GreenVote")
+              .col-sm-3.portfolio-item.one
+                %a.popup
+                  %span.project-hover
+                    %span
+                      Aveece
+                  = image_tag("aveece.png", :alt => "Aveece")    
+              .col-sm-3.portfolio-item.one
+                %a.popup{href: "images/image-03-full.jpg"}
+                  %span.project-hover
+                    %span
+                      Biomated Solutions
+                  = image_tag("biomated.png", :alt => "BioMated Solutions")
+              .col-sm-3.portfolio-item.one
+                %a.popup{href: "images/image-04-full.jpg"}
+                  %span.project-hover
+                    %span
+                      Grand Round Table
+                  = image_tag("grand-round-table.png")
+              .col-sm-3.portfolio-item.one
+                %a.popup{href: "images/image-02-full.jpg"}
+                  %span.project-hover
+                    %span
+                      Graphmuse
+                  = image_tag("graphmuse.png")
+              .col-sm-3.portfolio-item.one
+                %a.popup{href: "images/image-06-full.jpg"}
+                  %span.project-hover
+                    %span
+                      Knowtorious
+                  = image_tag("knowtorious.jpg")
+              .col-sm-3.portfolio-item.one
+                %a.popup{href: "images/image-06-full.jpg"}
+                  %span.project-hover
+                    %span
+                      Parametric
+                  = image_tag("parametric.png")
+              .col-sm-3.portfolio-item.one
+                %a.popup{href: "images/image-06-full.jpg"}
+                  %span.project-hover
+                    %span
+                      Penncycle
+                  = image_tag("penncycle.png")
+              .col-sm-3.portfolio-item.one
+                %a.popup{href: "images/image-06-full.jpg"}
+                  %span.project-hover
+                    %span
+                      The Rent Scene
+                  = image_tag("TheRentScene.jpg")  
 / END Portfolio
-/ BEGIN Testimoni
-%section#testimoni.testimoni
-  .container
-    .wrapper
-      .row
-        .col-sm-12.animaze
-          .title.text-center
-            %h1.white WHAT THEY SAY
-            %hr.white/
-          #quote-slider
-            %ul
-              %li
-                .hexaout
-                  %img.hexapic{alt: "", src: "images/quote-avatar-2.jpg"}/
-                %h2 When there is darkness, dare to be the first to shine a light.
-                %span — Budi Sumadi, CEO Baju Buathik
-              %li
-                .hexaout
-                  %img.hexapic{alt: "", src: "images/quote-avatar-1.jpg"}/
-                %h2 It is important that we forgive ourselves for making mistakes. We need to learn from our errors and move on
-                %span — Budi Sumadi, CEO Baju Buathik
-/ END Testimoni
+%section#team
+  .team
+    .container
+      .wrapper
+        .row
+          .col-sm-12.animaze.fromTop
+            .title.text-center
+              %h1 THE TEAM
+              %hr/
+          .col-sm-12.animaze.fromBottom
+            .row
+              .col-sm-4.animaze.fromBottom
+                .cprofile
+                  .lightbox-item
+                    = image_tag("http://placekitten.com/300/300")
+                    .lightbox-item-overlay-content
+                      %p Anubhav is a junior in the Jerome Fisher Program in Management and Technology, pursuing Finance at The Wharton School and Materials Engineering at the School of Engineering and Applied Science. He is a returning member of the Innovation Fund. He has a keen interest for technology and business and enjoys learning about new innovations. At Penn, he is also involved with the Private Equity and Venture Capital Association and the Wharton Trading Group. He can be contacted at anubhavm@wharton.upenn.edu.
+                  %h3 Anubhav Maheshwari
+                  %span Co-Chair
+              .col-sm-4.animaze.fromTop
+                .cprofile
+                  .lightbox-item
+                    = image_tag("http://placekitten.com/300/300")
+                    .lightbox-item-overlay-content
+                  %h3 Robbie Horwitz
+                  %span Co-Chair
+              .col-sm-4.animaze.fromTop
+                .cprofile
+                  .lightbox-item
+                    = image_tag("http://placekitten.com/300/300")
+                    .lightbox-item-overlay-content
+                  %h3 Connor Theilmann, 
+                  %span Treasurer / PM
+            .row
+              .col-sm-4.animaze.fromBottom
+                .cprofile
+                  .lightbox-item
+                    = image_tag("http://placekitten.com/300/300")
+                    .lightbox-item-overlay-content
+                  %h3 Nick Normile
+                  %span External Outreach
+              .col-sm-4.animaze.fromTop
+                .cprofile
+                  .lightbox-item
+                    = image_tag("http://placekitten.com/300/300")
+                    .lightbox-item-overlay-content
+                  %h3 Aly Kassim-Lakha 
+                  %span PM
+              .col-sm-4.animaze.fromTop
+                .cprofile
+                  .lightbox-item
+                    = image_tag("http://placekitten.com/300/300")
+                    .lightbox-item-overlay-content
+                  %h3 Tanya Paul
+                  %span Internal Portfolio Manager
 / BEGIN About
 %section#about.about
-  .slider-about-wrapper{style: "background:url('images/about-us-background.jpg');"}
-    .slider-about
-      .container
-        .wrapper
-          .row
-            .col-sm-12.slide-text-wrapper
-              .slide-text
-                I AM A
-                = succeed "\u{a0}FREELANCER" do
-                  %span.rotatez AWESOME,CREATIVES,GREAT,FANTASTIC,PROFESSIONAL
   .team
     .container
       .wrapper
@@ -203,32 +227,31 @@
           %ul.dp_tmtimeline
             %li
               %time.dp_tmtime{datetime: "2013-04-10 18:30"}
-                %span Apply
+                %span Written application
               .dp_tmicon.fa.fa-pencil
               .dp_tmlabel.animaze.fromTop
-                %h2 Junior Writer
-                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis.
+                %p The application starts online with answering a few questions to help us get a better idea of how your business is run and how the Innovation Fund can help you. Optionally, you can also link to a 2-minute Youtube elevator pitch to help us better understand your business. The link to apply is below.
             %li
               %time.dp_tmtime{datetime: "2013-04-11T12:04"}
                 %span Get Mentored
               .dp_tmicon.fa.fa-user
               .dp_tmlabel.animaze.fromTop
-                %p If your project is selected, an Innovation Fund Committee member will become your project manager, and will act as your liaison to the rest of the Committee. If he feels that you are ready to present your idea in front of the committee, he will prepare you for a formal 10-minute pitch followed by a 10-minute Questions & Answers session. Accepted teams will receive a $1,000 grant and will have access to the Tech House’s technical, legal, and business mentoring resources. Teams that are not accepted to the Innovation Fund will have the opportunity to pitch again during the following semester.
+                %p If your project is selected, an Innovation Fund Committee member will become your project manager and will act as your liaison to the rest of the Committee. If she feels that you are ready to present your idea in front of the committee, she will prepare you for the pitch and question session. 
             %li
               %time.dp_tmtime{datetime: "2013-04-13 05:36"}
                 %span Pitch
               .dp_tmicon.fa.fa-bullhorn
               .dp_tmlabel.animaze.fromTop
-                %p Pitch your idea to the Innovation Fund committee. Pitches last 10 minutes and are followed by a 10-minute question and answer session.
+                %p Breath in and out. Pitch your idea to the Innovation Fund committee. Pitches last 10 minutes and are followed by a 10-minute question and answer session. 
             %li
               %time.dp_tmtime{datetime: "2013-04-15 13:15"}
                 %span Get funded
               .dp_tmicon.fa.fa-dollar
               .dp_tmlabel.animaze.fromTop
-                %p Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna.
+                %p Accepted teams will receive a $1,000 grant and will have access to the Tech House’s technical, legal, and business mentoring resources. Teams that are not accepted to the Innovation Fund will have the opportunity to pitch again during the following semester.
           %br/
           .col-md-12
-            %a.button.theme-color.fright.btn-block
+            = link_to application_path, class: "button theme-color fright btn-block btn-lg" do 
               %i.fa.fa-pencil
               Apply
 / END About
