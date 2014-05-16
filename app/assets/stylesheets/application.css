@@ -10,5 +10,12 @@
  *
  *= require_self
  *= require font-awesome
+ *= require bootstrap.min.css
+ *= require memdang-theme.css
+ *= require magnific-popup.css
+ *= require navbar.css
+ *= require overrides-color.css
+ *= require overrides.min.css
+ *= require custom.scss
  *= require_tree .
  */

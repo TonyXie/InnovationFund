@@ -40,7 +40,7 @@
   .container
     .wrapper
       .row
-        .col-lg-12
+        .col-sm-12
           %h2.grey.text-center A fund by students for students
           %p The Weiss Tech House Innovation Fund is an in-house, mini-venture capital fund, run by a student Innovation Fund Committee. It is the gateway to funding and support from the Weiss Tech House. Each year the Committee awards approximately twenty grants of up to $5,000 to student inventors seeking funding to develop their innovative ideas, in addition to ongoing technical, legal, and business mentoring resources. All you need is an idea.
 / END Intro
@@ -49,9 +49,9 @@
   .container
     .wrapper
       .row
-        .col-lg-12.animaze.fromTop
+        .col-sm-12.animaze.fromTop
           .title.text-center
-            %h1 WHY WE ARE AWESOME
+            %h1 How we help you
             %hr/
         / featured 1
         .col-sm-4.animaze.fromBottom
@@ -91,59 +91,77 @@
             %h1 PORTFOLIO COMPANIES
             %hr/
           %p Our companies are started by a wide array of people at Penn. Everyone from undergraduates in engineering or business to graduates in medicine.
-          %h2.portfolioFilter.text-center
-            WE DO WORK ABOUT
-            = succeed "," do
-              %a{"data-filter" => "websites", href: "javascript:;"} WEBSITES
-            = succeed "," do
-              %a{"data-filter" => "illustrations", href: "javascript:;"} ILLUSTRATIONS
-            %a{"data-filter" => "photo", href: "javascript:;"} PHOTOGRAPHS
-            %a{"data-filter" => "all", href: "javascript:;"} AND EVERYTHING
-        .col-lg-12.animaze.fromBottom
+          -# %h2.portfolioFilter.text-center
+          -#   PAGE:
+          -#   = succeed "," do
+          -#     %a{"data-filter" => "one", href: "javascript:;"} 1
+          -#   = succeed "," do
+          -#     %a{"data-filter" => "illustrations", href: "javascript:;"} 2
+          -#   %a{"data-filter" => "photo", href: "javascript:;"} PHOTOGRAPHS
+          -#   %a{"data-filter" => "all", href: "javascript:;"} AND EVERYTHING
+        .col-sm-12.animaze.fromBottom
           .row.portfolioContainer.text-center
-            .col-lg-4.portfolio-item.websites
-              %a.popup{href: "images/image-01-full.jpg"}
+            .col-sm-3.portfolio-item.one
+              %a.popup
                 %span.project-hover
                   %span
-                    Designing UI/UX
-                %img{alt: "portfolio-thumb-1", src: "images/portfolio-thumb-1.jpg"}/
-            .col-lg-4.portfolio-item.illustrations
-              %a.popup{href: "images/image-05-full.jpg"}
+                    GreenVote
+                = image_tag("greenvote.png", :alt => "GreenVote")
+            .col-sm-3.portfolio-item.one
+              %a.popup
                 %span.project-hover
                   %span
-                    Designing Apps
-                %img{alt: "portfolio-thumb-5", src: "images/portfolio-thumb-5.jpg"}/
-            .col-lg-4.portfolio-item.websites
+                    Aveece
+                = image_tag("aveece.png", :alt => "Aveece")    
+            .col-sm-3.portfolio-item.one
               %a.popup{href: "images/image-03-full.jpg"}
                 %span.project-hover
                   %span
-                    Branding Identity
-                %img{alt: "portfolio-thumb-3", src: "images/portfolio-thumb-3.jpg"}/
-            .col-lg-4.portfolio-item.photo
+                    Biomated Solutions
+                = image_tag("biomated.png", :alt => "BioMated Solutions")
+            .col-sm-3.portfolio-item.one
               %a.popup{href: "images/image-04-full.jpg"}
                 %span.project-hover
                   %span
-                    Photography
-                %img{alt: "portfolio-thumb-4", src: "images/portfolio-thumb-4.jpg"}/
-            .col-lg-4.portfolio-item.websites
+                    Grand Round Table
+                = image_tag("grand-round-table.png")
+            .col-sm-3.portfolio-item.one
               %a.popup{href: "images/image-02-full.jpg"}
                 %span.project-hover
                   %span
-                    Website Design
-                %img{alt: "portfolio-thumb-2", src: "images/portfolio-thumb-2.jpg"}/
-            .col-lg-4.portfolio-item.illustrations
+                    Graphmuse
+                = image_tag("graphmuse.png")
+            .col-sm-3.portfolio-item.one
               %a.popup{href: "images/image-06-full.jpg"}
                 %span.project-hover
                   %span
-                    Branding Illustration
-                %img{alt: "portfolio-thumb-6", src: "images/portfolio-thumb-6.jpg"}/
+                    Knowtorious
+                = image_tag("knowtorious.jpg")
+            .col-sm-3.portfolio-item.one
+              %a.popup{href: "images/image-06-full.jpg"}
+                %span.project-hover
+                  %span
+                    Parametric
+                = image_tag("parametric.png")
+            .col-sm-3.portfolio-item.one
+              %a.popup{href: "images/image-06-full.jpg"}
+                %span.project-hover
+                  %span
+                    Penncycle
+                = image_tag("penncycle.png")
+            .col-sm-3.portfolio-item.one
+              %a.popup{href: "images/image-06-full.jpg"}
+                %span.project-hover
+                  %span
+                    The Rent Scene
+                = image_tag("TheRentScene.jpg")  
 / END Portfolio
 / BEGIN Testimoni
 %section#testimoni.testimoni
   .container
     .wrapper
       .row
-        .col-lg-12.animaze
+        .col-sm-12.animaze
           .title.text-center
             %h1.white WHAT THEY SAY
             %hr.white/
@@ -167,7 +185,7 @@
       .container
         .wrapper
           .row
-            .col-lg-12.slide-text-wrapper
+            .col-sm-12.slide-text-wrapper
               .slide-text
                 I AM A
                 = succeed "\u{a0}FREELANCER" do
@@ -176,7 +194,7 @@
     .container
       .wrapper
         .row
-          .col-lg-12.animaze.fromTop
+          .col-sm-12.animaze.fromTop
             .title.text-center
               %h1 THE PROCESS
               %hr/
@@ -220,27 +238,27 @@
     .container
       .wrapper
         .row
-          .col-lg-12
+          .col-sm-12
             #contact-slider
               %ul
                 %li
                   / Contact details
                   .row
-                    .col-lg-6
+                    .col-sm-6
                       %form#contactForm.contact-form{novalidate: ""}
-                        .col-lg-12
+                        .col-sm-12
                           .row
-                            .col-lg-6
+                            .col-sm-6
                               %input.form-control{placeholder: "Your Name", type: "text"}/
-                            .col-lg-6
+                            .col-sm-6
                               %input.form-control{placeholder: "Email", type: "text"}/
                           .row
-                            .col-lg-12
+                            .col-sm-12
                               %input.form-control{placeholder: "Subject", type: "text"}/
-                            .col-lg-12
+                            .col-sm-12
                               %textarea.form-control{placeholder: "Message...", rows: "5"}
                             %button.button.button-white-side Send message
-                    .col-lg-6
+                    .col-sm-6
                       .bio
                         %h3 Innovation Fund
                         %p We are located at the Weiss Tech House at the Universiy of Pennsylvania.
@@ -255,7 +273,7 @@
                           %strong Address 2
                           %i Heavenis Road 96 A - Burnmingham City, UK 775
                   .row
-                    .col-lg-12
+                    .col-sm-12
                       %br/
                       %p.visit
                         %a.contactLink.hovercolor{"data-rel" => "3", href: "javascript:;"}
@@ -275,7 +293,7 @@
       .credits
         .container
           .row
-            .col-lg-6.col-md-6.col-sm-6
+            .col-sm-6.col-md-6.col-sm-6
               %p.credits-title
                 MADE BY
                 %a.hovercolor{href: "javascript:;"} TONY XIE
