@@ -91,71 +91,27 @@
             %h1 PORTFOLIO COMPANIES
             %hr/
           %p Our companies are started by a wide array of people at Penn. Everyone from undergraduates in engineering or business to graduates in medicine. Below is a list of current and past start ups that the Innovation Fund has invested in.
-          -# %h2.portfolioFilter.text-center
-          -#   PAGE:
-          -#   = succeed "," do
-          -#     %a{"data-filter" => "one", href: "javascript:;"} 1
-          -#   = succeed "," do
-          -#     %a{"data-filter" => "illustrations", href: "javascript:;"} 2
-          -#   %a{"data-filter" => "photo", href: "javascript:;"} PHOTOGRAPHS
-          -#   %a{"data-filter" => "all", href: "javascript:;"} AND EVERYTHING
         .col-sm-12.animaze.fromBottom
-          .row.portfolioContainer.text-center
+          .row.portfolioContainer
             .portfolio
-              .col-sm-3.portfolio-item.one
-                %a.popup
-                  %span.project-hover
-                    %span
-                      GreenVote
+              .col-sm-3.portfolio-item
                 = image_tag("greenvote.png", :alt => "GreenVote")
-              .col-sm-3.portfolio-item.one
-                %a.popup
-                  %span.project-hover
-                    %span
-                      Aveece
-                  = image_tag("aveece.png", :alt => "Aveece")    
-              .col-sm-3.portfolio-item.one
-                %a.popup{href: "images/image-03-full.jpg"}
-                  %span.project-hover
-                    %span
-                      Biomated Solutions
-                  = image_tag("biomated.png", :alt => "BioMated Solutions")
-              .col-sm-3.portfolio-item.one
-                %a.popup{href: "images/image-04-full.jpg"}
-                  %span.project-hover
-                    %span
-                      Grand Round Table
-                  = image_tag("grand-round-table.png")
-              .col-sm-3.portfolio-item.one
-                %a.popup{href: "images/image-02-full.jpg"}
-                  %span.project-hover
-                    %span
-                      Graphmuse
-                  = image_tag("graphmuse.png")
-              .col-sm-3.portfolio-item.one
-                %a.popup{href: "images/image-06-full.jpg"}
-                  %span.project-hover
-                    %span
-                      Knowtorious
-                  = image_tag("knowtorious.jpg")
-              .col-sm-3.portfolio-item.one
-                %a.popup{href: "images/image-06-full.jpg"}
-                  %span.project-hover
-                    %span
-                      Parametric
-                  = image_tag("parametric.png")
-              .col-sm-3.portfolio-item.one
-                %a.popup{href: "images/image-06-full.jpg"}
-                  %span.project-hover
-                    %span
-                      Penncycle
-                  = image_tag("penncycle.png")
-              .col-sm-3.portfolio-item.one
-                %a.popup{href: "images/image-06-full.jpg"}
-                  %span.project-hover
-                    %span
-                      The Rent Scene
-                  = image_tag("TheRentScene.jpg")  
+              .col-sm-3.portfolio-item
+                = image_tag("aveece.png", :alt => "Aveece")    
+              .col-sm-3.portfolio-item
+                = image_tag("biomated.png", :alt => "BioMated Solutions")
+              .col-sm-3.portfolio-item
+                = image_tag("grand-round-table.png")
+              .col-sm-3.portfolio-item
+                = image_tag("graphmuse.png")
+              .col-sm-3.portfolio-item
+                = image_tag("knowtorious.jpg")
+              .col-sm-3.portfolio-item
+                = image_tag("parametric.png")
+              .col-sm-3.portfolio-item
+                = image_tag("penncycle.png")
+              .col-sm-3.portfolio-item
+                = image_tag("TheRentScene.jpg")  
 / END Portfolio
 %section#team
   .team
