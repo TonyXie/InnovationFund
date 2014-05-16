@@ -1,0 +1,13 @@
+.parallaxize.bg-parallax { background-image: image-url("robe-mountain.jpg");}
+.contact .form-control {
+    background: image-url('rect_2.png') rgba(0, 0, 0, 0);
+}
+.map-wrapper {
+    background: image-url('rect_2.png');
+}
+.title hr, .slides-filter{
+    background: image-url('rect_s1.png');
+}
+.title hr.white, #home-slide hr.white {
+    background: image-url('rect_s2.png');
+}
