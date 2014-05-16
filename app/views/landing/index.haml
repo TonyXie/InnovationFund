@@ -90,7 +90,7 @@
           .title.text-center
             %h1 PORTFOLIO COMPANIES
             %hr/
-          %p Our companies are started by a wide array of people at Penn. Everyone from undergraduates in engineering or business to graduates in medicine.
+          %p Our companies are started by a wide array of people at Penn. Everyone from undergraduates in engineering or business to graduates in medicine. Below is a list of current and past start ups that the Innovation Fund has invested in.
           -# %h2.portfolioFilter.text-center
           -#   PAGE:
           -#   = succeed "," do
@@ -245,59 +245,33 @@
                   / Contact details
                   .row
                     .col-sm-6
-                      %form#contactForm.contact-form{novalidate: ""}
-                        .col-sm-12
-                          .row
-                            .col-sm-6
-                              %input.form-control{placeholder: "Your Name", type: "text"}/
-                            .col-sm-6
-                              %input.form-control{placeholder: "Email", type: "text"}/
-                          .row
-                            .col-sm-12
-                              %input.form-control{placeholder: "Subject", type: "text"}/
-                            .col-sm-12
-                              %textarea.form-control{placeholder: "Message...", rows: "5"}
-                            %button.button.button-white-side Send message
+                      / Map
+                      .map-wrapper
+                        #map
                     .col-sm-6
                       .bio
-                        %h3 Innovation Fund
+                        %h3 Contact the Innovation Fund
                         %p We are located at the Weiss Tech House at the Universiy of Pennsylvania.
                       %ul.bioextra
                         %li
-                          %strong Call
-                          %i +64 566 - 155 - 1235   /   +15 127 - 887 - 331
+                          %strong Email
+                          %i
+                            %a{:href => "mailto:apply.innovationfund@gmail.com"}  apply.innovationfund@gmail.com
+                        %li 
+                          %strong Phone
+                          %i (215)573-0513
                         %li
-                          %strong Address 1
-                          %i Raihan St. 1601 S. California Ave Palo Alto, CA 94304. US
-                        %li
-                          %strong Address 2
-                          %i Heavenis Road 96 A - Burnmingham City, UK 775
-                  .row
-                    .col-sm-12
-                      %br/
-                      %p.visit
-                        %a.contactLink.hovercolor{"data-rel" => "3", href: "javascript:;"}
-                          %i.icon-map-marker
-                      %p
-                        St. Bulaksumur No 445
-                        = succeed "Sleman," do
-                          %br/
-                %li
-                  / Map
-                  .map-wrapper
-                    #map
-                  %p
-                    %a.contactLink.hovercolor.return-to{"data-rel" => "1", href: "javascript:;"}
-                      %i.icon-long-arrow-left
-                      Return to contact details
+                          %strong Address 
+                          %i Levine Hall, Rm 266, 3330 Walnut Street, Philadelphia, PA 19104
       .credits
         .container
           .row
-            .col-sm-6.col-md-6.col-sm-6
-              %p.credits-title
-                MADE BY
-                %a.hovercolor{href: "javascript:;"} TONY XIE
-                \© 2014.
+            .col-sm-12
+              .text-center
+                %p.credits-title
+                  MADE BY
+                  %a.hovercolor{href: "javascript:;"} TONY XIE
+                  \© 2014.
           .scroll-up
             %a{href: "#home-slide"}
               %i.fa.fa-angle-up

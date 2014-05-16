@@ -102,13 +102,7 @@ dp(document).ready(function() {
                 }
             },
             marker: {
-                address: "Haltern am See, Weseler Str. 151", // PUT YOUR ADDRESS HERE
-                options: {
-                    icon: new google.maps.MarkerImage(
-                        "http://cdn.webiconset.com/map-icons/images/pin6.png",
-                        new google.maps.Size(42, 69, "px", "px")
-                    )
-                }
+                address: "3330 Walnut Street, Philadelphia, PA 19104", // PUT YOUR ADDRESS HERE
             }
         },
         "autofit");
