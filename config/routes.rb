@@ -1,6 +1,7 @@
 InnovationFund::Application.routes.draw do
+  resources :applications
+
   root 'landing#index'
-  get '/application' => 'application#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

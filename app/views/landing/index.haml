@@ -204,10 +204,12 @@
                 %span Get funded
               .dp_tmicon.fa.fa-dollar
               .dp_tmlabel.animaze.fromTop
-                %p Accepted teams will receive a $1,000 grant and will have access to the Tech House’s technical, legal, and business mentoring resources. Teams that are not accepted to the Innovation Fund will have the opportunity to pitch again during the following semester.
+                %p Accepted teams will receive a $1,000 grant and will have access to the Tech House’s technical, legal, and business mentoring resources. 
+                %p Accepted team are expected to regularly update their project managers on their progress, participate in the Weiss Tech House's events and community, and show that they have received funding from the Innovation Fund on their company website.
+                %p Teams that are not accepted to the Innovation Fund will have the opportunity to pitch again during the following semester.
           %br/
           .col-md-12
-            = link_to application_path, class: "button theme-color fright btn-block btn-lg" do 
+            = link_to new_application_path, class: "button theme-color fright btn-block btn-lg", data: { no_turbolink: true } do 
               %i.fa.fa-pencil
               Apply
 / END About

@@ -1,0 +1,63 @@
+%p#notice= notice
+
+%p
+  %b Video link:
+  = @application.video_link
+%p
+  %b Project summary:
+  = @application.project_summary
+%p
+  %b Problem:
+  = @application.problem
+%p
+  %b Solution:
+  = @application.solution
+%p
+  %b Name:
+  = @application.name
+%p
+  %b Email:
+  = @application.email
+%p
+  %b Funding history:
+  = @application.funding_history
+%p
+  %b Key financials:
+  = @application.key_financials
+%p
+  %b Team:
+  = @application.team
+%p
+  %b Target market:
+  = @application.target_market
+%p
+  %b Value proposition:
+  = @application.value_proposition
+%p
+  %b Technology:
+  = @application.technology
+%p
+  %b Competitive advantage:
+  = @application.competitive_advantage
+%p
+  %b Business model:
+  = @application.business_model
+%p
+  %b Milestones and funding uses:
+  = @application.milestones_and_funding_uses
+%p
+  %b Progress summary:
+  = @application.progress_summary
+%p
+  %b Team skills:
+  = @application.team_skills
+%p
+  %b Market analysis:
+  = @application.market_analysis
+%p
+  %b Risks:
+  = @application.risks
+
+= link_to 'Edit', edit_application_path(@application)
+\|
+= link_to 'Back', applications_path

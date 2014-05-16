@@ -1,0 +1,67 @@
+= form_for @application do |f|
+  - if @application.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@application.errors.count, "error")} prohibited this application from being saved:"
+      %ul
+        - @application.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :video_link
+    = f.text_field :video_link
+  .field
+    = f.label :project_summary
+    = f.text_area :project_summary
+  .field
+    = f.label :problem
+    = f.text_area :problem
+  .field
+    = f.label :solution
+    = f.text_area :solution
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :email
+    = f.text_field :email
+  .field
+    = f.label :funding_history
+    = f.text_area :funding_history
+  .field
+    = f.label :key_financials
+    = f.text_area :key_financials
+  .field
+    = f.label :team
+    = f.text_area :team
+  .field
+    = f.label :target_market
+    = f.text_area :target_market
+  .field
+    = f.label :value_proposition
+    = f.text_area :value_proposition
+  .field
+    = f.label :technology
+    = f.text_area :technology
+  .field
+    = f.label :competitive_advantage
+    = f.text_area :competitive_advantage
+  .field
+    = f.label :business_model
+    = f.text_area :business_model
+  .field
+    = f.label :milestones_and_funding_uses
+    = f.text_area :milestones_and_funding_uses
+  .field
+    = f.label :progress_summary
+    = f.text_area :progress_summary
+  .field
+    = f.label :team_skills
+    = f.text_area :team_skills
+  .field
+    = f.label :market_analysis
+    = f.text_area :market_analysis
+  .field
+    = f.label :risks
+    = f.text_area :risks
+  .actions
+    = f.submit 'Save'

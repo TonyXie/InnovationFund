@@ -1,0 +1,22 @@
+.container
+  .row
+    .col-sm-12
+      %h1 Listing applications
+
+      %table.table.table-bordered
+        %tr
+          %th Id
+          %th Name
+          %th Email
+        - @applications.each do |application|
+          %tr
+            %td= application.id
+            %td= application.name
+            %td= application.email
+            %td= link_to 'Show', application
+            %td= link_to 'Edit', edit_application_path(application)
+            %td= link_to 'Destroy', application, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+      %br
+
+      = link_to 'New Application', new_application_path
