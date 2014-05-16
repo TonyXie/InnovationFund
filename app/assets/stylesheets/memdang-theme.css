@@ -939,7 +939,7 @@ i.icon-mini:hover {
     color: #f83a16;
 }
 .navbar-brand span, .logo span {
-    color: rgba(152, 197, 80, 255);
+    color: rgba(152, 197, 80, 1);
     font-size: 50px;
 }
 .navbar-brand img.logo {

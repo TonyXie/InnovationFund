@@ -238,7 +238,7 @@ DEPENDENCIES
   rails (= 4.0.0)
   rails_12factor
   rspec-rails (~> 2.9.0)
-  sass-rails (~> 4.0.0)
+  sass-rails
   sdoc
   thin
   turbolinks
