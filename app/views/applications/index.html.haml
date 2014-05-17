@@ -6,17 +6,17 @@
       %table.table.table-bordered
         %tr
           %th Id
-          %th Name
-          %th Email
+          %th Company name
+          %th Main contact email
         - @applications.each do |application|
           %tr
             %td= application.id
             %td= application.name
             %td= application.email
-            %td= link_to 'Show', application
+            %td= link_to 'View application', application
             %td= link_to 'Edit', edit_application_path(application)
-            %td= link_to 'Destroy', application, :method => :delete, :data => { :confirm => 'Are you sure?' }
+            %td= link_to 'Delete', application, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
       %br
 
-      = link_to 'New Application', new_application_path
+      = link_to 'New Application', new_application_path, class: "button black"

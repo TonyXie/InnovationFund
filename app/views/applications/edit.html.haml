@@ -1,7 +1,11 @@
-%h1 Editing application
+.container
+  .row
+    .col-sm-12
+      %h1 Editing application
+  .row
+    .col-sm-8
+      = render 'form'
 
-= render 'form'
-
-= link_to 'Show', @application
-\|
-= link_to 'Back', applications_path
+      = link_to 'View application', @application, class: "button black"
+      \|
+      = link_to 'Back to all applications', applications_path, class: "button black"
