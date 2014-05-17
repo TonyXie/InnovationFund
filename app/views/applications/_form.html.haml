@@ -1,7 +1,7 @@
 = form_for @application, class: "form" do |f|
   - if @application.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@application.errors.count, "error")} prohibited this application from being saved:"
+      %h2= "Oops looks like you have #{pluralize(@application.errors.count, "error")}, which stopped this application from being submitted."
       %ul
         - @application.errors.full_messages.each do |msg|
           %li= msg
@@ -42,7 +42,7 @@
     = f.label :business_model, "What is your business model?"
     = f.text_area :business_model, class: "form-control", rows: 12
   .form-group
-    = f.label :value_proposition, "What is your unique proposition?"
+    = f.label :value_proposition, "What is your unique value proposition?"
     = f.text_area :value_proposition, class: "form-control", rows: 3
   .form-group
     = f.label :market_analysis, "Give an analysis of your competitors."
