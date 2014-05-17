@@ -51,9 +51,9 @@
         %li Personal travel expenses
         %li Incorporation fees
         %li Patents
-
-      %h3 Online application form
-
+  .row
+    %h3 Online application form
+    .col-sm-8
       = render 'form'
 
-      = link_to 'Back', root_path, class: "btn btn-default"
+      = link_to 'Back', root_path, data: { no_turbolink: true }, class: "button black"

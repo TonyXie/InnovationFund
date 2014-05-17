@@ -1,67 +1,66 @@
-= form_for @application do |f|
+= form_for @application, class: "form" do |f|
   - if @application.errors.any?
     #error_explanation
       %h2= "#{pluralize(@application.errors.count, "error")} prohibited this application from being saved:"
       %ul
         - @application.errors.full_messages.each do |msg|
           %li= msg
-
-  .field
-    = f.label :video_link
-    = f.text_field :video_link
-  .field
-    = f.label :project_summary
-    = f.text_area :project_summary
-  .field
-    = f.label :problem
-    = f.text_area :problem
-  .field
-    = f.label :solution
-    = f.text_area :solution
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :email
-    = f.text_field :email
-  .field
-    = f.label :funding_history
-    = f.text_area :funding_history
-  .field
-    = f.label :key_financials
-    = f.text_area :key_financials
-  .field
-    = f.label :team
-    = f.text_area :team
-  .field
-    = f.label :target_market
-    = f.text_area :target_market
-  .field
-    = f.label :value_proposition
-    = f.text_area :value_proposition
-  .field
-    = f.label :technology
-    = f.text_area :technology
-  .field
-    = f.label :competitive_advantage
-    = f.text_area :competitive_advantage
-  .field
-    = f.label :business_model
-    = f.text_area :business_model
-  .field
-    = f.label :milestones_and_funding_uses
-    = f.text_area :milestones_and_funding_uses
-  .field
-    = f.label :progress_summary
-    = f.text_area :progress_summary
-  .field
-    = f.label :team_skills
-    = f.text_area :team_skills
-  .field
-    = f.label :market_analysis
-    = f.text_area :market_analysis
-  .field
-    = f.label :risks
-    = f.text_area :risks
-  .actions
-    = f.submit 'Save'
+  .form-group
+    %label Company name
+    = f.text_field :name, class: "form-control"
+  .form-group
+    = f.label :email, "Main contact email"
+    = f.email_field :email, class: "form-control"
+  .form-group
+    = f.label :video_link, "Optional link to 2-minute pitch on Youtube"
+    = f.text_field :video_link, class: "form-control"
+  .form-group
+    = f.label :project_summary, "Project summary in 100 words"
+    = f.text_area :project_summary, class: "form-control", rows: 5
+  .form-group
+    = f.label :problem, "What problem are you trying to solve?"
+    = f.text_area :problem, class: "form-control", rows: 3
+  .form-group
+    = f.label :solution, "What is your solution?"
+    = f.text_area :solution, class: "form-control", rows: 3
+  .form-group
+    = f.label :progress_summary, "Provide a detailed description of the progress you made so far in the business (max 500 words)."
+    = f.text_area :progress_summary, class: "form-control", rows: 12
+  .form-group
+    = f.label :key_financials, "What are your key financials?"
+    = f.text_area :key_financials, class: "form-control", rows: 12
+  .form-group
+    = f.label :team, "Tell us what we should know about your team, that is Penn affliations and other qualifications."
+    = f.text_area :team, class: "form-control", rows: 12
+  .form-group
+    = f.label :team_skills, "What kind of unique skills does your team bring?"
+    = f.text_area :team_skills, class: "form-control", rows: 12
+  .form-group
+    = f.label :target_market, "What is your target market?"
+    = f.text_area :target_market, class: "form-control", rows: 3
+  .form-group
+    = f.label :business_model, "What is your business model?"
+    = f.text_area :business_model, class: "form-control", rows: 12
+  .form-group
+    = f.label :value_proposition, "What is your unique proposition?"
+    = f.text_area :value_proposition, class: "form-control", rows: 3
+  .form-group
+    = f.label :market_analysis, "Give an analysis of your competitors."
+    = f.text_area :market_analysis, class: "form-control", rows: 12
+  .form-group
+    = f.label :technology, "What types of technology are you leveraging?"
+    = f.text_area :technology, class: "form-control", rows: 3
+  .form-group
+    = f.label :competitive_advantage, "What is your competitive advantage against these competitors?"
+    = f.text_area :competitive_advantage, class: "form-control", rows: 12
+  .form-group
+    = f.label :funding_history, "Any previous funding?"
+    = f.text_area :funding_history, class: "form-control", rows: 3
+  .form-group
+    = f.label :milestones_and_funding_uses, "How do you intend to use the funding from the Innovation Fund?"
+    = f.text_area :milestones_and_funding_uses, class: "form-control", rows: 3
+  .form-group
+    = f.label :risks, "What kinds of obstacles have you faced so far and what kinds of risks will you encounter in the future?"
+    = f.text_area :risks, class: "form-control", rows: 12
+  .form-group
+    = f.submit 'Submit application', class: "button black"

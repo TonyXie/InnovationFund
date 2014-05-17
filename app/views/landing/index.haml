@@ -34,9 +34,15 @@
       %h1.white.uppercase.hugetext Turn idea into reality
       %hr.white/
       %h3.white.hugetext The Innovation Fund at the Weiss Tech House at the University of Pennsylvania
+      = link_to "#intro", data: { no_turbolink: true }, class: "button button-white-side" do 
+        %i.fa.fa-lightbulb-o 
+        More information
+      = link_to new_application_path, data: { no_turbolink: true }, class: "button button-white-side" do 
+        %i.fa.fa-dollar 
+        Apply for funding
 / END Slider
 / BEGIN Intro
-%section.intro
+%section#intro.intro
   .container
     .wrapper
       .row
@@ -213,7 +219,7 @@
           .col-md-12
             = link_to new_application_path, class: "button theme-color fright btn-block btn-lg", data: { no_turbolink: true } do 
               %i.fa.fa-pencil
-              Apply
+              Apply!
 / END About
 / BEGIN Contact
 %section#contact.contact{style: "background:url('images/contact-background.jpg');"}
