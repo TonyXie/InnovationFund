@@ -1,4 +1,5 @@
 InnovationFund::Application.routes.draw do
+  devise_for :admins
   resources :applications
 
   root 'landing#index'
