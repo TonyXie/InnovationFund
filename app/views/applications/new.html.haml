@@ -21,39 +21,39 @@
     .col-sm-12
       %h1 New application
       %h3 Judging Criteria
-      %p Initial grants are of $1,000 each. These grants are judged on the following criteria: 
-      %ul 
+      %p Initial grants usually average 500-1000 dollars each. These grants are judged on the following criteria:
+      %ul
         %li Projects must have an innovative factor: technological/process.
         %li Projects must have a technological component.
         %li Projects should have a good management team which is dedicated to implementation.
         %li Projects must be feasible.
         %li Projects must be in accordance with the Weiss Tech House ideals and mission.
         %li The innovative part of the project must be completed by the team and not outsourced.
-      %p After the initial grant, teams can pitch once again for up to $4,000 in additional funding. These subsequent pitches are judged on the following criteria. 
-      %ul 
-        %li How has your team used the initial $1,000 grant?
+      %p After the initial grant, teams can pitch once again for additional funding. These subsequent pitches are judged on the following criteria.
+      %ul
+        %li How has your team used the initial grant?
         %li What milestones has your team been able to reach with the initial grant?
         %li How does your team plan to use the additional funding?
         %li What milestones does your team plan to reach with the additional funding?
         %li What Tech House resources besides funding have your team utilized?
         %li Did your team stay in contact with your project manager and give him any project updates?
-      %h3 Use of funds conditions: 
+      %h3 Use of funds conditions:
       %p All proposed uses for the Innovation Fund grant must be initially approved by the team’s project manager and then ultimately by the entire Innovation Fund Committee. Common uses for Innovation Fund grants include:
-      %ul 
+      %ul
         %li Raw materials used to construct a prototype
         %li Server costs
-        %li Necessary packaged software (not the payment for a professional to write computer code)
+        %li Necessary packaged software, but not the payment for a professional to write computer code
         %li Security certificates
-      %p The Innovation Fund tends not to solely fund:
-      %ul 
-        %li Marketing expenses
-        %li The cost of a contractor’s services (i.e. payment for a professional to write a computer code).
-        %li Personal travel expenses
-        %li Incorporation fees
-        %li Patents
-  .row
-    %h3 Online application form
-    .col-sm-8
-      = render 'form'
+      %br/
+      .col-md-12
+        = link_to "http://www.tech-house.upenn.edu/innovation-fund/", class: "pull-left center button theme-color fright btn-lg", data: { no_turbolink: true } do
+          %i.fa.fa-pencil
+          Apply!
+      .padding-bottom-large
+        %br/
+  -# .row
+  -#   %h3 Online application form
+  -#   .col-sm-8
+  -#     = render 'form'
 
-      = link_to 'Back', root_path, data: { no_turbolink: true }, class: "button black"
+  -#     = link_to 'Back', root_path, data: { no_turbolink: true }, class: "button black"

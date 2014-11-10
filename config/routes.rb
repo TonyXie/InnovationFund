@@ -1,6 +1,7 @@
 InnovationFund::Application.routes.draw do
   devise_for :admins
-  resources :applications
+  # resources :applications
+  get 'applications/new', as: :new_applications
 
   root 'landing#index'
   # The priority is based upon order of creation: first created -> highest priority.
@@ -43,7 +44,7 @@ InnovationFund::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
