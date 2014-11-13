@@ -19,6 +19,12 @@
 .container.application-container
   .row
     .col-sm-12
+      - if @application.errors.any?
+        #error_explanation.alert.alert-danger
+          %h2= "Oops looks like you have #{pluralize(@application.errors.count, "error")}, which stopped this application from being submitted."
+          %ul
+            - @application.errors.full_messages.each do |msg|
+              %li= msg
       %h1 New application
       %h3 Judging Criteria
       %p Initial grants usually average 500-1000 dollars each. These grants are judged on the following criteria:
@@ -44,16 +50,9 @@
         %li Server costs
         %li Necessary packaged software, but not the payment for a professional to write computer code
         %li Security certificates
-      %br/
-      .col-md-12
-        = link_to "http://www.tech-house.upenn.edu/innovation-fund/", class: "pull-left center button theme-color fright btn-lg", data: { no_turbolink: true } do
-          %i.fa.fa-pencil
-          Apply!
-      .padding-bottom-large
-        %br/
-  -# .row
-  -#   %h3 Online application form
-  -#   .col-sm-8
-  -#     = render 'form'
+  .row
+    %h3 Online application form
+    .col-sm-8
+      = render 'form'
 
-  -#     = link_to 'Back', root_path, data: { no_turbolink: true }, class: "button black"
+      = link_to 'Back', root_path, data: { no_turbolink: true }, class: "button black"
