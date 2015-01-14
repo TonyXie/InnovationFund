@@ -15,8 +15,8 @@ gem 'turbolinks'
 gem 'will_paginate', '~> 3.0'
 gem 'font-awesome-rails'
 gem 'pg'
-gem 'sendgrid'
 gem 'figaro'
+gem 'rest_client'
 
 group :development do
   gem "better_errors"

@@ -1,7 +1,10 @@
 InnovationFund::Application.routes.draw do
   devise_for :admins
-  # resources :applications
+  resources :applications
   get 'applications/new', as: :new_applications
+
+  get 'apply' => 'applications#new_static'
+  get 'applyonline' => 'applications#new'
 
   root 'landing#index'
   # The priority is based upon order of creation: first created -> highest priority.

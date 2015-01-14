@@ -1,6 +1,7 @@
 class ApplicationsController < ApplicationController
+  include ApplicationsHelper
   before_action :set_application, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_admin!, except: [:new, :create]
+  before_action :authenticate_admin!, except: [:new, :create, :new_static]
 
   # GET /applications
   # GET /applications.json
@@ -18,6 +19,10 @@ class ApplicationsController < ApplicationController
     @application = Application.new
   end
 
+  def new_static
+    @application = Application.new
+  end
+
   # GET /applications/1/edit
   def edit
   end
@@ -29,7 +34,10 @@ class ApplicationsController < ApplicationController
 
     respond_to do |format|
       if @application.save
-        format.html { redirect_to @application, notice: 'Application was successfully created.' }
+        format.html {
+          send_simple_message()
+          redirect_to root_path, notice: 'Application was successfully created.'
+        }
         format.json { render action: 'show', status: :created, location: @application }
       else
         format.html { render action: 'new' }

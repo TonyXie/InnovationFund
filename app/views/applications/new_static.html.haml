@@ -51,11 +51,13 @@
         %li Necessary packaged software, but not the payment for a professional to write computer code
         %li Security certificates
   .row
-    %h3 Online application form
-    .col-sm-8
-      = render 'form'
-      %p
-        If you have any additional questions contact us at
-        %a{:href => "mailto:apply.innovationfund@gmail.com"} apply.innovationfund@gmail.com
+    %h3 Application forms below:
+    %p
+      = link_to "Innovation Fund Main Application", "http://www.tech-house.upenn.edu/wp-content/uploads/2012/10/Innovation_Fund_Main_Application.doc"
+    %p
+      = link_to "Innovation Fund Executive Summary", "http://www.tech-house.upenn.edu/wp-content/uploads/2012/10/Innovation_Fund_Main_Application.doc"
+    %p
+      Additional instructions found in forms. If you have any additional questions contact us at
+      %a{:href => "mailto:apply.innovationfund@gmail.com"} apply.innovationfund@gmail.com
 
-      = link_to 'Back', root_path, data: { no_turbolink: true }, class: "button black"
+    = link_to 'Back', root_path, data: { no_turbolink: true }, class: "button black"
