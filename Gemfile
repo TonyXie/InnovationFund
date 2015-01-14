@@ -16,6 +16,7 @@ gem 'will_paginate', '~> 3.0'
 gem 'font-awesome-rails'
 gem 'pg'
 gem 'sendgrid'
+gem 'figaro'
 
 group :development do
   gem "better_errors"
