@@ -35,7 +35,7 @@ class ApplicationsController < ApplicationController
     respond_to do |format|
       if @application.save
         format.html {
-          send_simple_message()
+          send_simple_message(@application)
           redirect_to root_path, notice: 'Application was successfully created.'
         }
         format.json { render action: 'show', status: :created, location: @application }
