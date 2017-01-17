@@ -1,16 +1,16 @@
-/* 
+/*
 
 ==========================================================
 
     STYLE FOR MEMANDANG TEMPLATE
     DEVELPIXEL 2013;
-    
+
 ==========================================================
 
 
 */
  /*====================== 1. General CSS ========================== */
- 
+
  body {
      color: #555555;
      background: #ffffff;
@@ -1078,7 +1078,8 @@ i.icon-mini:hover {
 .intro {
     padding-top: 60px;
     padding-bottom: 80px;
-    background-color:rgba(135, 61, 61, 0.75);
+    /*background-color:rgba(255,99,71, 0.75);*/
+    background-color: rgb(192,57,43);
     color: #FFF;
 }
 .intro h2 {
