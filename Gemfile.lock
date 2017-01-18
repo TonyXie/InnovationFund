@@ -116,6 +116,7 @@ GEM
     multi_json (1.12.1)
     multi_test (0.1.2)
     netrc (0.7.9)
+    nio4r (2.0.0)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
@@ -220,6 +221,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails
+  nio4r
   pg
   rails (= 4.0.0)
   rails_12factor

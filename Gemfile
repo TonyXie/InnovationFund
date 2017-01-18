@@ -4,6 +4,7 @@ gem 'rails', '4.0.0'
 gem 'rake', '< 11.0' # http://stackoverflow.com/questions/35893584/nomethoderror-undefined-method-last-comment-after-upgrading-to-rake-11
 gem 'faker', '~> 1.0.1'
 # gem 'guard-rspec', '0.5.5' # Causing problems
+gem 'nio4r'
 gem 'thin'
 gem 'haml-rails'
 gem 'devise'
