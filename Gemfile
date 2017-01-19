@@ -2,23 +2,22 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
 gem 'rake', '< 11.0' # http://stackoverflow.com/questions/35893584/nomethoderror-undefined-method-last-comment-after-upgrading-to-rake-11
-gem 'faker', '~> 1.0.1'
+# gem 'faker', '~> 1.0.1'
 # gem 'guard-rspec', '0.5.5' # Causing problems
-gem 'nio4r'
-gem 'thin'
+# gem 'thin'
 gem 'haml-rails'
 gem 'devise'
-gem 'sass-rails'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '>= 4.0.0'
+# gem 'sass-rails'
+# gem 'uglifier', '>= 1.3.0'
+# gem 'coffee-rails', '>= 4.0.0'
 gem 'jquery-rails'
-gem 'jbuilder', '~> 1.2'
+# gem 'jbuilder', '~> 1.2'
 gem 'turbolinks'
-gem 'will_paginate', '~> 3.0'
+# gem 'will_paginate', '~> 3.0'
 gem 'font-awesome-rails'
 gem 'pg'
-gem 'figaro'
-gem 'rest_client'
+# gem 'figaro'
+# gem 'rest_client'
 
 group :development do
   gem "better_errors"
