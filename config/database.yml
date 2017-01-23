@@ -20,7 +20,7 @@ development:
   database: InnovationFund_development
   pool: 5
   host: localhost
-  username: tony_dev
+  username: derekjobst
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -49,7 +49,7 @@ test:
   encoding: unicode
   database: InnovationFund_test
   pool: 5
-  username: tony_dev
+  username: derekjobst
   password:
 
 production:
@@ -57,5 +57,5 @@ production:
   encoding: unicode
   database: InnovationFund_production
   pool: 5
-  username: tony_dev
+  username: derekjobst
   password:
